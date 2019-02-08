@@ -1,0 +1,19 @@
+<script>
+<input id="text">
+<button onclick="talk()">Talk It!</button>
+<button onclick="listen()">Voice</button>
+<script src="../bower_components/platform/platform.js"></script>
+<script src="../src/webspeech.js"></script>
+<script>
+    var speaker = new webspeech.Speaker();
+    var listener = new webspeech.Listener();
+    function talk() {
+        speaker.speak("en", document.getElementById("text").value);
+    }
+ 
+    function listen() {
+        listener.listen("en", function(text) {
+            document.getElementById("text").value = text;
+        });
+    }
+</script>

@@ -1,0 +1,166 @@
+body, html{
+    height: calc(100% - 2em);
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+}
+body{
+    background: #16FF5C; /* Old browsers */
+    background: -moz-linear-gradient(45deg, #16FF5C 0%, #076aff 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(45deg, #16FF5C 0%,#076aff 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(45deg, #16FF5C 0%,#076aff 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#16FF5C', endColorstr='#076aff',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+aside{
+    color: #fff;
+    display: grid;
+    grid-template-columns: 40px auto;
+    padding: 2em;
+}
+aside img{
+    cursor: pointer;
+}
+.active {
+    position: absolute;
+    display: block;
+    background: #D2D2D2;
+    width: 50%;
+    left: 0;
+    top: 0;
+    height: 100%;
+}
+.MenuX{
+    position: absolute;
+    display: block;
+    top: 0;
+    right: .5em;
+    padding: 1em;
+    color: #000;
+    cursor: pointer;
+}
+ul {
+    display: none;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+ul li a {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: .8em;
+    display: block;
+    padding: .95em 3em;
+    color: #000;
+}
+div.logo{
+    width: 150px;
+    height: 150px;
+    background-image: url('../images/LOGO_Transparent.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    padding-bottom:5px;
+}
+main{
+    padding: 1em 1.4em;
+}
+.search{
+    padding: 12px 20px 12px;
+    width: 50%;
+    border-radius: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 15em;
+    display: block;
+    background-color:#D5D5D5;
+    color: #878787;
+    font-size: 16px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+}
+.search:focus{
+    color: black;
+    width: 90%;
+}
+@media only screen and (min-width: 768px) and (min-height: 614px){
+    body{
+        display: grid;
+        grid-template-columns: 17.125em auto;
+        padding: 2em;
+    }
+    .menuimg{
+        display: none;
+    }
+    .MenuX{
+        display: none;
+    }
+    aside{
+        background: #D2D2D2;
+        grid-template-columns: auto;
+        padding: 0;
+        border-radius: 5px 0px 0px 5px;
+    }
+    main{
+        padding: 4em;
+        background: white url('../images/wave.svg') no-repeat bottom right;
+        background-size: 70%;
+        border-radius: 0px 5px 5px 0px;
+    }
+    ul{
+        display: block;
+        margin-top: 2em;
+        position:  relative !important;
+        background: none !important;
+        background: #fff;
+        width: 100% !important;
+    }
+    ul li a{
+        padding: 1.4em;
+    }
+    ul li a:hover{
+        background: #fff;
+    }
+    .search{
+        width: 50%;
+        margin: 0 auto;
+        display: block;
+    }
+    div.logo{
+        margin-top: 12em;
+    }
+}
+@media only screen and (min-width: 1610px){
+    div.logo{
+        height:6.25em !important;
+        width: 37.8125em !important;
+        background-image: url('../images/LOGO_21x127.png') !important;
+        background-size: contain;
+        background-repeat: no-repeat;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        padding-bottom: 5px !important;
+        /*width: 38.66% !important;*/
+    }
+}
+@media only screen and (max-height: 880px) and (min-width: 768px) and (min-height: 582px){
+    body{
+        display: flex !important;
+    }
+    main{
+        flex: 1;
+    }
+    ul li a{
+        font-size: 0.625em;
+        padding: 1em;        
+    }
+}
+@media only screen and (max-height: 665px) and (min-height: 582px){
+    div.logo{
+        margin-top: 1em;
+    }
+}

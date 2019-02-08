@@ -1,0 +1,6 @@
+To Play open the "Play GooglePacman.html"
+
+If you get no sound open the adobe link, and add the -
+"*your location* GooglePacman\logos\swf\pacman10-hp-sound.swf"
+to the always trust files in these locations:
+with the flash settings manager 

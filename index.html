@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Jacob McDonnell</title>
+        <link href="CSS/main.css" rel="stylesheet" type="text/css">
+        <script src="JS/main.js"></script>
+    </head>
+    <body onkeydown="keyCode(event)" onload="FocusOnInput()">
+        <aside>
+            <img src="images\menu.svg" id="menuicon" class="menuimg">
+            <nav>
+                <ul>
+                    <p id="menuX" class="MenuX">X</p>
+                    <li><a href="https://mcd223.github.io">Home</a></li>
+                    <li><a href="https://mcd223.github.io/morsecode/">Morse code</a></li>
+                    <li><a href="https://mcd223.github.io/binary/" id="pLink">Binary</a></li>
+                    <li><a href="https://mcd223.github.io/Pacman/" id="pLinks">Google Pacman</a></li>
+                    <li><a href="https://duckduckgo.com/">DuckDuckGo</a></li>
+                    <li><a href="https://mail.google.com/mail/u/0/?tab=wm#inbox">Gmail</a></li>
+                    <li><a href="https://play.google.com/music/listen?authuser&u=0#/home">Google Play Music</a></li>
+                    <li><a href="https://photos.google.com/">Google Photos</a></li>
+                    <li><a href="https://domains.google.com/m/registrar/">Google Domains</a></li>
+                    <li><a href="https://drive.google.com/drive/u/0/my-drive">Google Drive</a></li>
+                    <li><a href="https://www.youtube.com">Youtube</a></li>
+                    <li><a href="https://www.github.com/">Github</a></li>
+                    <li><a href="https://8values.github.io/">8Values</a></li>
+                    <li><a href="https://www.politicalcompass.org/test/">Political Compass</a></li>
+                    <li><a href="https://www.twitch.tv/">Twitch</a></li>
+                    <li><a href="http://www.w3schools.com/html/default.asp">html tutorial</a></li>
+                </ul>
+            </nav>
+        </aside>
+        <main>
+            <div class="logo"><br></div>
+            <input id="Search" class="search" type="text" placeholder="Search..." onkeydown="searchDuck(event)"/>
+        </main>
+        <script>
+            (function() {
+                var menu = document.querySelector('ul'),
+                    menulink = document.getElementById('menuicon'),
+                    menuclose = document.getElementById('menuX');
+                menulink.addEventListener('click', function(e) {
+                    menu.classList.toggle('active');
+                    e.preventDefault();
+                });
+                menuX.addEventListener('click', function(e) {
+                    menu.classList.toggle('active');
+                    e.preventDefault();
+                });
+            })();
+        </script>
+    </body>
+</html>
