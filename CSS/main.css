@@ -101,7 +101,7 @@ main{
         display: none;
     }
     aside{
-        background:rgba(213,213,213,.72);
+        background:rgba(213,213,213,.71);
         grid-template-columns: auto;
         padding: 0;
         border-radius: 5px 0px 0px 5px;
