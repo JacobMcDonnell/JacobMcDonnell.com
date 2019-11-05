@@ -20,7 +20,6 @@ This is a checklist of what needs to be done on this website.
 
 ## Imporant
 
-- Buy the domain jacobmcdonnell.com
 - Add more commands to the JavaScript console
 - Update links in sidenav
 - Update CSS on Pacman Page
@@ -38,5 +37,6 @@ This is a checklist of what needs to be done on this website.
 ## Completed
 
 - ~~Create a READ.MD file~~
+- ~~Buy the domain jacobmcdonnell.com~~
 
 ***
