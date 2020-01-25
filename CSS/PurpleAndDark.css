@@ -5,11 +5,7 @@ body, html{
     font-size: 16px;
 }
 body{
-    background: #16FF5C; /* Old browsers */
-    background: -moz-linear-gradient(45deg, #16FF5C 0%, #076aff 100%); /* FF3.6-15 */
-    background: -webkit-linear-gradient(45deg, #16FF5C 0%,#076aff 100%); /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(45deg, #16FF5C 0%,#076aff 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#16FF5C', endColorstr='#076aff',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+    background: linear-gradient(to top right, #076aff 0%, #8e09ff 100%);
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
@@ -23,7 +19,7 @@ aside img{
     cursor: pointer;
 }
 a{
-    color:#000;
+    color:#fff;
 }
 .active {
     position: absolute;
@@ -70,6 +66,7 @@ div.logo{
 }
 main{
     padding: 1em 1.4em;
+    color: white;
 }
 .search{
     padding: 12px 20px 12px;
@@ -79,16 +76,17 @@ main{
     margin-right: auto;
     margin-bottom: 15em;
     display: block;
-    background-color: rgba(213,213,213,.72);
-    color: #878787;
+    background-color: rgba(36,38,40,.72);
+    color: rgb(186,181,171);
+    border-color: #575757;
     font-size: 16px;
     -webkit-transition: width 0.4s ease-in-out;
     transition: width 0.4s ease-in-out;
 }
 .search:focus{
-    color: black;
+    color: #fff;
     width: 90%;
-    background-color: rgba(213,213,213,1.0);
+    background-color: rgba(36,38,40,1);
 }
 @media only screen and (min-width: 768px) and (min-height: 614px){
     body{
@@ -103,7 +101,7 @@ main{
         display: none;
     }
     aside{
-        background:rgba(210,210,210,1);
+        background:rgba(37,37,37,1);
         grid-template-columns: auto;
         padding: 0 !important;
         border-radius: 5px 0px 0px 5px;
@@ -111,10 +109,10 @@ main{
     }
     main{
         padding: 4em;
-        background:rgba(255,255,255,1);
+        background: rgba(24,26,27,1);
         background-size: 70%;
         border-radius: 0px 5px 5px 0px;
-        background-image: url('../images/SideFlareGreen.svg') !important;
+        background-image: url('../images/SideFlarePurple.svg') !important;
         background-repeat: no-repeat;
         background-position: 100% 100%;
         margin: 82px 101px 62px 0;
@@ -130,10 +128,10 @@ main{
     ul li a{
         padding: 1.4em;
         font-size: .8em;
-        color:#000;
+        color:#fff;
     }
     ul li a:hover{
-        background: #fff;
+        background: #000;
     }
     .search{
         width: 50%;

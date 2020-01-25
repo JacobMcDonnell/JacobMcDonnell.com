@@ -7,13 +7,13 @@
         <meta name="description" content="This is the personal website for the real Jacob McDonnell. Feel free to look around, you might find something interesting."/>
 	<meta name="author" content="Jacob McDonnell"/>
 	<meta name="keywords" content="Jacob,McDonnell,Jacob McDonnell"/>
-	<title>Jacob McDonnell</title>
+	<title>Settings</title>
         <link id="cssFile" href="CSS/main.css" rel="stylesheet" type="text/css">
         <script src="JS/main.js"></script>
         <script src="JS/cookies.js"></script>
         <script src="JS/command.js"></script>
     </head>
-    <body onkeydown="keyCode(event)" onload="FocusOnInput(),checkCookie()">
+    <body onkeydown="keyCode(event)" onload=" checkCookie()">
         <aside id="NavBar">
             <img src="images\menu.svg" id="menuicon" class="menuimg">
             <nav>
@@ -40,23 +40,35 @@
             </nav>
         </aside>
         <main>
-            <div class="logo"><br></div>
-            <input id="Search" class="search" type="text" placeholder="Search..." onkeydown="searchDuck(event)"/>
+            <center><h1>Settings and Information Page</h1></center>
+            <form id="themeForm">
+                <h2>Theme</h2>
+                <select name="themes">
+                    <option value="GreenAndWhite">Green and White</option>
+                    <option value="GreenAndDark">Green and Dark</option>
+                    <option value="PurpleAndWhite">Purple and White</option>
+                    <option value="PurpleAndDark">Purple and Dark</option>
+                </select><br><br>
+                <input type="submit">
+            </form>
+            <h2>About <a href="https://jacobmcdonnell.com/">JacobMcDonnell.com</a></h2>
+            <p>This is the personal website for the <strong>real</strong> Jacob McDonnell. Eventually this will switch to infomation about the <strong>real</strong> Jacob McDonnell. This website was designed and programmed by the <strong>real</strong> Jacob McDonnell.</p>
+            <h2>Cookie Policy</h2>
+            <p><a href="https://jacobmcdonnell.com/">JacobMcDonnell.com</a> uses <strong>ONE</strong> cookie to allow for the theme of the website to stay the same. The information stored in the cookie is the name of cookie, which is theme, the value of the cookie, which is the name of the theme, and is set to expire 365 days after the last vist of the site. The source code of the cookie can be found at <a href="https://jacobmcdonnell.com/JS/cookies.js" target="_blank">here</a>. There are <strong>ZERO</strong> third party cookies used with this site.</p>
+            <h2>Privacy Policy</h2>
+            <p><a href="https://jacobmcdonnell.com/">JacobMcDonnell.com</a> collects <strong>ZERO</strong> information from visitors of the website. The Source code for the website can be found at <a href="https://github.com/mcd223/mcd223.github.io" target="_blank">here</a>. However, <a href="https://jacobmcdonnell.com/">JacobMcDonnell.com</a> is hosted on github pages and is not responible for any of the information collected by them if any.</p>
+            <script>
+                const myForm = document.getElementById("themeForm");
+                myForm.addEventListener("submit", (e) => {
+                    var formData = new FormData(myForm);
+                    e.preventDefault();
+                    for(var value of formData.values()){
+                        console.log(value);
+                        setCookie("theme", value, 365);
+                        checkCookie();
+                    }
+                });
+            </script>
         </main>
-        <script>
-            (function() {
-                var menu = document.querySelector('ul'),
-                    menulink = document.getElementById('menuicon'),
-                    menuclose = document.getElementById('menuX');
-                menulink.addEventListener('click', function(e) {
-                    menu.classList.toggle('active');
-                    e.preventDefault();
-                });
-                menuX.addEventListener('click', function(e) {
-                    menu.classList.toggle('active');
-                    e.preventDefault();
-                });
-            })();
-        </script>
     </body>
 </html>

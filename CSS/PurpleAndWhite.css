@@ -5,11 +5,7 @@ body, html{
     font-size: 16px;
 }
 body{
-    background: #16FF5C; /* Old browsers */
-    background: -moz-linear-gradient(45deg, #16FF5C 0%, #076aff 100%); /* FF3.6-15 */
-    background: -webkit-linear-gradient(45deg, #16FF5C 0%,#076aff 100%); /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(45deg, #16FF5C 0%,#076aff 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#16FF5C', endColorstr='#076aff',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+    background: linear-gradient(to top right, #076aff 0%, #8e09ff 100%);
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
@@ -114,7 +110,7 @@ main{
         background:rgba(255,255,255,1);
         background-size: 70%;
         border-radius: 0px 5px 5px 0px;
-        background-image: url('../images/SideFlareGreen.svg') !important;
+        background-image: url('../images/SideFlarePurple.svg') !important;
         background-repeat: no-repeat;
         background-position: 100% 100%;
         margin: 82px 101px 62px 0;
