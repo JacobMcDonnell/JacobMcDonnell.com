@@ -68,6 +68,19 @@
                         checkCookie();
                     }
                 });
+                (function() {
+                var menu = document.querySelector('ul'),
+                    menulink = document.getElementById('menuicon'),
+                    menuclose = document.getElementById('menuX');
+                menulink.addEventListener('click', function(e) {
+                    menu.classList.toggle('active');
+                    e.preventDefault();
+                });
+                menuX.addEventListener('click', function(e) {
+                    menu.classList.toggle('active');
+                    e.preventDefault();
+                });
+                })();
             </script>
         </main>
     </body>

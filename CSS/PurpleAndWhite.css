@@ -24,7 +24,7 @@ a{
 .active {
     position: absolute;
     display: block;
-    background: #D2D2D2;
+    background: rgba(210,210,210,1);
     width: 50%;
     left: 0;
     top: 0;
