@@ -13,7 +13,7 @@
         <script src="JS/cookies.js"></script>
         <script src="JS/command.js"></script>
     </head>
-    <body onkeydown="keyCode(event)" onload="FocusOnInput(),checkCookie()">
+    <body onkeydown="keyCode(event)" onload="FocusOnInput(),checkCookie(),setCookie('theme', getCookie('theme', 365))">
         <aside id="NavBar">
             <img src="images\menu.svg" id="menuicon" class="menuimg">
             <nav>
