@@ -175,3 +175,15 @@ main{
         margin-top: 1em;
     }
 }
+@media only screen and (max-height: 762px){
+    ul li a{
+        font-size: 7px;
+    }
+    p{
+        font-size: 10px;
+    }
+    body{
+        grid-template-columns: 16% auto;
+    }
+    
+}
