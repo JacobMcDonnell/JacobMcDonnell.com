@@ -22,7 +22,7 @@ function getCookie(cname) {
 function checkCookie() {
     var theme=getCookie("theme");
     if(theme == ""){
-        setCookie("theme","GreenAndWhite",365);
+        setCookie("theme","PurpleAndDark",365);
         window.location.reload(false);
     }else if(theme == "GreenAndWhite"){
         document.getElementById("cssFile").href = "CSS/main.css";
