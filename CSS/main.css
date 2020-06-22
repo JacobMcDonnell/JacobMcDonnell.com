@@ -104,6 +104,7 @@ main{
 }
 .dropbtn:hover, .dropbtn:focus {
   background-color: #fff;
+  border: none;
 }
 .dropdown {
   position: relative;
@@ -124,6 +125,8 @@ main{
   text-decoration: none;
   display: block;
 }
+.dropdown a:hover {background-color: #fff;}
+.show {display: block;}
 @media only screen and (min-width: 768px) and (min-height: 614px){
     body{
         display: grid;
