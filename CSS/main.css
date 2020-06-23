@@ -97,6 +97,7 @@ main{
   cursor: pointer;
   background: rgba(210,210,210,1);
   border: none;*/
+  text-transform: uppercase;
   display: block;
   position: relative;
   width: 100%;

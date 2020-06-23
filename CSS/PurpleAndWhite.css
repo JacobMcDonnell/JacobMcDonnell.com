@@ -92,6 +92,7 @@ main{
   font-size: .9em;
   cursor: pointer;
   background: rgba(210,210,210,1);
+  text-transform: uppercase;
   border: none;*/
   display: block;
   position: relative;
