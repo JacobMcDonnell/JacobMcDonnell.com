@@ -8,13 +8,13 @@
 	<meta name="author" content="Jacob McDonnell"/>
 	<meta name="keywords" content="Jacob,McDonnell,Jacob McDonnell"/>
 	<title>Jacob McDonnell</title>
-        <link id="cssFile" href="../CSS/PurpleAndDark.css" rel="stylesheet" type="text/css">
-        <script src="../JS/main.js"></script>
-        <script src="../JS/cookies.js"></script>
+        <link id="cssFile" href="CSS/PurpleAndDark.css" rel="stylesheet" type="text/css">
+        <script src="JS/main.js"></script>
+        <script src="JS/cookies.js"></script>
     </head>
     <body onload="checkCookie()">
         <aside id="NavBar">
-            <img src="..\images\menu.svg" id="menuicon" class="menuimg">
+            <img src="images\menu.svg" id="menuicon" class="menuimg">
             <nav>
                 <ul id="menuLinks">
                     <p id="menuX" class="MenuX">X</p>
@@ -82,9 +82,6 @@
                         console.log(value);
 			window.open("https://clients2.google.com/service/update2/crx?response=redirect&prodversion=49.0&acceptformat=crx3&x=id%3D" + value + "%26installsource%3Dondemand%26uc");
 		}
-
-
-
                 (function() {
                 var menu = document.querySelector('ul'),
                     menulink = document.getElementById('menuicon'),
