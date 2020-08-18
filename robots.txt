@@ -1,5 +1,6 @@
 User-agent: *
 Disallow: /settings.html
+Disallow: /extensions.html
 Disallow: /CSS
 Disallow: /JS
 Disallow: /Pacman
