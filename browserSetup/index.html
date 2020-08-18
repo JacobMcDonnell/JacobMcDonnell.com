@@ -8,14 +8,13 @@
 	<meta name="author" content="Jacob McDonnell"/>
 	<meta name="keywords" content="Jacob,McDonnell,Jacob McDonnell"/>
 	<title>Jacob McDonnell</title>
-        <link id="cssFile" href="CSS/PurpleAndDark.css" rel="stylesheet" type="text/css">
-        <script src="JS/main.js"></script>
-        <script src="JS/cookies.js"></script>
-        <script src="JS/command.js"></script>
+        <link id="cssFile" href="../CSS/PurpleAndDark.css" rel="stylesheet" type="text/css">
+        <script src="../JS/main.js"></script>
+        <script src="../JS/cookies.js"></script>
     </head>
-    <body onkeydown="keyCode(event)" onload="FocusOnInput(),checkCookie(),setCookie('theme', getCookie('theme', 365))">
+    <body onload="checkCookie()">
         <aside id="NavBar">
-            <img src="images\menu.svg" id="menuicon" class="menuimg">
+            <img src="..\images\menu.svg" id="menuicon" class="menuimg">
             <nav>
                 <ul id="menuLinks">
                     <p id="menuX" class="MenuX">X</p>
@@ -50,11 +49,43 @@
             </nav>
         </aside>
         <main>
-            <div class="logo"><br></div>
-            <input id="Search" class="search" type="text" placeholder="Search..." onkeydown="searchDuck(event)"/>
+		<h1>Jacob's Chrome Extension Grabber</h1>
+		<p>Note: When selecting multiple from the quick selector you will have to allow pop ups or select them one at a time.</p>
+		<h2>Quick Selector</h2>
+		<form id="extensions">
+			<input type="checkbox" id="gcbommkclmclpchllfjekcdonpmejbdp" name="gcbommkclmclpchllfjekcdonpmejbdp" value="gcbommkclmclpchllfjekcdonpmejbdp"><label for="gcbommkclmclpchllfjekcdonpmejbdp">HTTPS Everywhere</label><br>
+			<input type="checkbox" id="cjpalhdlnbpafiamejdnhcphjbkeiagm" name="cjpalhdlnbpafiamejdnhcphjbkeiagm" value="cjpalhdlnbpafiamejdnhcphjbkeiagm"><label for="cjpalhdlnbpafiamejdnhcphjbkeiagm">Ublock Origin</label><br>
+			<input type="checkbox" id="pkehgijcmpdhfbdbbnkijodmdjhbjlgp" name="pkehgijcmpdhfbdbbnkijodmdjhbjlgp" value="pkehgijcmpdhfbdbbnkijodmdjhbjlgp"><label for="pkehgijcmpdhfbdbbnkijodmdjhbjlgp">Privacy Badger</label><br>
+			<input type="checkbox" id="hdokiejnpimakedhajhdlcegeplioahd" name="hdokiejnpimakedhajhdlcegeplioahd" value="hdokiejnpimakedhajhdlcegeplioahd"><label for="hdokiejnpimakedhajhdlcegeplioahd">LastPass</label><br>
+			<input type="checkbox" id="icpgjfneehieebagbmdbhnlpiopdcmna" name="icpgjfneehieebagbmdbhnlpiopdcmna" value="icpgjfneehieebagbmdbhnlpiopdcmna"><label for="icpgjfneehieebagbmdbhnlpiopdcmna">New Tab Redirect</label><br>
+			<input type="submit" value="Install">
+		</form>
+		<h2>Paste Chrome Webstore Link Here:</h2>
+		<form id="chrome" onsubmit="idGrabber()">
+			<input type="text" id="links"><br>
+			<input type="submit" value="Install">
+		</form>
         </main>
-        <script>
-            (function() {
+	<script>
+                const myForm = document.getElementById("extensions");
+                myForm.addEventListener("submit", (e) => {
+                    var formData = new FormData(myForm);
+                    e.preventDefault();
+                    for(var value of formData.values()){
+			installer(value);
+                    }
+                });
+		function idGrabber(){
+			installer(document.getElementById('links').value.split("/")[6]);
+		}
+		function installer(value){
+                        console.log(value);
+			window.open("https://clients2.google.com/service/update2/crx?response=redirect&prodversion=49.0&acceptformat=crx3&x=id%3D" + value + "%26installsource%3Dondemand%26uc");
+		}
+
+
+
+                (function() {
                 var menu = document.querySelector('ul'),
                     menulink = document.getElementById('menuicon'),
                     menuclose = document.getElementById('menuX');
@@ -66,8 +97,7 @@
                     menu.classList.toggle('active');
                     e.preventDefault();
                 });
-            })();
-
-        </script>
+                })();
+	</script>
     </body>
 </html>
