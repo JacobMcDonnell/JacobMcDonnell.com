@@ -1,65 +1,79 @@
 <html>
-<title>404</title>
-<link href="https://mcd223.github.io/CSS/main.css" rel="stylesheet" type="text/css">
-<link href="https://mcd223.github.io/CSS/mobile.css" rel="stylesheet" type="text/css">
-<script>
----
-permalink: /404.html 
----
-</script>
-<style>
-body{background-color:#323232;}
-p{text-align:center;font-size:250%;color:white;}
-img{width:400px;height:259.5px;}
-</style>
-<body onkeydown="keyCode(event)" id="body">
-<div id="main">
-  <span style="font-size:30px;cursor:pointer;color:white;" onclick="openNav()">&#9776;</span>
-<center>
-<p> Error 404 Page Not Found. </p>
-<p> Somthing went wrong, but someone is fixing it. </p>
-<img id="404" src="https://mcd223.github.io/404.gif" alt="404" width="400" height="259.5">
-</center> 
-<div id="mySidenav" class="sidenav">
-<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-
-<a href="https://mcd223.github.io">Home</a>
-<a href="https://mcd223.github.io/morsecode/">Morse code</a>
-<a href="https://mcd223.github.io/binary/">Binary</a>
-<a href="https://mcd223.github.io/Pacman/">Google Pacman</a>
-<a href="https://www.google.com/">Google.com</a>
-<a href="https://duckduckgo.com/">DuckDuckGo</a>
-<a href="https://mail.google.com/mail/u/0/?tab=wm#inbox">Gmail</a>
-<a href="https://sites.google.com/a/simplelittledream.com?tab=m3&pli=1">Google Sites</a>
-<a href="https://drive.google.com/drive/u/0/my-drive">Google Drive</a>
-<a href="https://www.youtube.com"> Youtube </a>
-<a href="https://www.4chan.org"> 4chan </a>
-<a href="https://8values.github.io/">8Values</a>
-<a href="https://www.politicalcompass.org/test/">Political Compass</a>
-<a href="https://www.8ch.net"> 8chan </a>
-<a href="https://www.twitch.tv/">Twitch</a>
-<a href="https://twitter.com/">  Twitter  </a> 
-<a href="http://www.urbandictionary.com/">Urban Dictionary</a>
-<a href="http://ai2.appinventor.mit.edu/">  google app maker </a>
-<a href="https://www.google.com/voice/">  google voice </a>   
-<a href="https://susestudio.com/"> os maker </a>
-<a href="http://www.computerhope.com/overview.htm">  MS-DOS commands   </a>
-<a href="http://geektyper.com/"> GEEK TYPER </a>
-<a href="https://www.dropbox.com/home"> dropbox </a>
-<a href="http://www.w3schools.com/html/default.asp"> html tutorial   </a>
-</div>
-
-
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <meta name="description" content="This is the personal website for the real Jacob McDonnell. Feel free to look around, you might find something interesting."/>
+	<meta name="author" content="Jacob McDonnell"/>
+	<meta name="keywords" content="Jacob,McDonnell,Jacob McDonnell"/>
+        <link id="cssFile" href="CSS/PurpleAndDark.css" rel="stylesheet" type="text/css">
+	<title>Jacob McDonnell</title>
+        <script src="JS/main.js"></script>
+        <script src="JS/cookies.js"></script>
+        <script src="JS/command.js"></script>
+    </head>
 
 <script>
-function openNav() {
-    document.getElementById("mySidenav").style.width = "250px";
-    document.getElementById("main").style.marginLeft = "250px";
-}
-function closeNav() {
-    document.getElementById("mySidenav").style.width = "0";
-    document.getElementById("main").style.marginLeft= "0";
-}
+---
+permalink: /404.html
+---
 </script>
+       <body onkeydown="keyCode(event)" onload="FocusOnInput(),checkCookie(),setCookie('theme', getCookie('theme', 365))">
+        <aside id="NavBar">
+            <img src="images\menu.svg" id="menuicon" class="menuimg">
+            <nav>
+                <ul id="menuLinks">
+                    <p id="menuX" class="MenuX">X</p>
+                    <li><a href="https://jacobmcdonnell.com/">Home</a></li>
+                    <li><button onclick="dropdown('pages')" class="dropbtn">Pages</button>
+  		    <div id="pages" class="dropdown-content">
+			<a href="https://jacobmcdonnell.com/">Home</a>
+			<a href="https://jacobmcdonnell.com/morsecode/">Morse code</a>
+                    	<a href="https://jacobmcdonnell.com/binary/" id="pLink">Binary</a>
+                    	<a href="https://jacobmcdonnell.com/Pacman/" id="pLinks">Google Pacman</a>
+ 			<a href="https://jacobmcdonnell.com/settings.html">Settings and Information</a>
+			<a href="https://jacobmcdonnell.com/extensions.html">Chrome Extensions</a>
+		    </div></li>
+                    <li><a href="https://duckduckgo.com/">DuckDuckGo</a></li>
+		    <li><button onclick="dropdown('gsites')" class="dropbtn">Google Sites</button>
+  		    <div id="gsites" class="dropdown-content">
+    			<a href="https://mail.google.com/mail/?tab=wm&authuser=0&ogbl">Gmail</a>
+                        <a href="https://play.google.com/music/listen?authuser&u=0#/home">Google Play Music</a>
+                    	<a href="https://photos.google.com/">Google Photos</a>
+                    	<a href="https://domains.google.com/m/registrar/">Google Domains</a>
+                    	<a href="https://drive.google.com/drive/u/0/my-drive">Google Drive</a>
+
+		    </div></li>
+                    <li><a href="https://www.youtube.com">Youtube</a></li>
+		    <li><button onclick="dropdown('gitSites')" class="dropbtn">Git Sites</button>
+  		    <div id="gitSites" class="dropdown-content">
+    			<a href="https://www.github.com/">Github</a>
+                    	<a href="https://gitlab.com/">GitLab</a>
+		    </div></li>
+                    <li><a href="https://www.twitch.tv/">Twitch</a></li>
+                    <li><a href="http://www.w3schools.com/html/default.asp">html tutorial</a></li>
+                </ul>
+            </nav>
+        </aside>
+        <main>
+	    <h1 style="text-align:center;font-size:70px;">404 Page not found</h1>
+	    <h2 style="text-align:center;font-size:50px;"><------- You can go to one of the links over here.</h2>
+        </main>
+        <script>
+            (function() {
+                var menu = document.querySelector('ul'),
+                    menulink = document.getElementById('menuicon'),
+                    menuclose = document.getElementById('menuX');
+                menulink.addEventListener('click', function(e) {
+                    menu.classList.toggle('active');
+                    e.preventDefault();
+                });
+                menuX.addEventListener('click', function(e) {
+                    menu.classList.toggle('active');
+                    e.preventDefault();
+                });
+            })();
+        </script>
+    </body>
 </body>
 </html>
