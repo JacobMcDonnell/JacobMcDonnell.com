@@ -1,12 +1,7 @@
 User-agent: *
-Disallow: /settings.html
-Disallow: /extensions.html
 Disallow: /CSS
 Disallow: /JS
-Disallow: /Pacman
 Disallow: /Schoolproject
-Disallow: /binary
-Disallow: /downloads
 Disallow: /images
-Disallow: /morsecode
 Disallow: /404.html
+Disallow: /template.html
