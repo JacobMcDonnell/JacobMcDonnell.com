@@ -50,6 +50,6 @@ li a:hover{
 }
 @media only screen and (min-height: 1440px){
 	li a{
-		font-size:24px
+		font-size:36px;
 	}
 }
