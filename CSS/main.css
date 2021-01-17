@@ -1,10 +1,10 @@
 /*
  * Color scheme
- * Oxford Blue: 061A40
- * USAFA Blue: 0353A4
- * Honolulu Blue: 006DAA
- * Prussian Blue: 003559
- * Azure X 11 Web Color: D6E5E3
+ * Oxford Blue: #061A40
+ * USAFA Blue: #0353A4
+ * Honolulu Blue: #006DAA
+ * Prussian Blue: #003559
+ * Azure X 11 Web Color: #D6E5E3
  */
 @font-face{
 	font-family:IBM Plex Mono;
@@ -14,8 +14,8 @@ body, html{
 	height: calc(100% - 2em);
 }
 body{
-	background-color:D6E5E2;
-	color:003559;
+	background-color:#D6E5E3;
+	color:#003559;
 	font-family:IBM Plex Mono;
 }
 ul{
@@ -23,7 +23,7 @@ ul{
 	margin:0;
 	padding:0;
 	overflow:hidden;
-	background-color:003559;
+	background-color:#003559;
 	list-style-type:none;
 }
 li{
@@ -31,16 +31,34 @@ li{
 }
 li a{
 	display:block;
-	color:D6E5E3;
+	color:#D6E5E3;
 	text-align:center;
 	padding:14px 16px;
 	text-decoration:none;
 }
 li a:hover{
-	background-color:061A40;
+	background-color:#061A40;
 }
 .main{
 	margin:auto;
+}
+.search{
+	padding:12px 20px 12px;
+	width:90%;
+	border-radius:5px;
+	margin-left:auto;
+	margin-right:auto;
+	margin-bottom:15em;
+	color:#003559;
+	background-color:#D6E5E3;
+	font-family:IBM Plex Mono;
+	border-color:#003559;
+
+}
+.icon{
+	font-size:200px;
+	margin-top:10px;
+	margin-bottom:10px;
 }
 @media only screen and (min-width: 1440px){
 	.main{
@@ -51,5 +69,16 @@ li a:hover{
 @media only screen and (min-height: 1440px){
 	li a{
 		font-size:36px;
+	}
+	.search{
+		font-size:36px;
+	}
+	.icon{
+		font-size:256px;
+	}
+}
+@media only screen and (max-width: 1440px){
+	.desktop{
+		display:none;
 	}
 }
