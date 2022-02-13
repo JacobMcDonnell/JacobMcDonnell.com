@@ -2,6 +2,7 @@
 	/*
 	 * Color scheme
 	 * Background color: #eaefef
+	 * Code background: #d4d9d9
 	 * Main color: #00558e
 	 * Secondary color: #0b3075
 	 */
@@ -20,7 +21,7 @@
 	a{
 		color: #00558e;
 	}
-	ul{
+	ul.topBar{
 		text-transform:uppercase;
 		margin:0;
 		padding:0;
@@ -28,21 +29,22 @@
 		background-color:#00558e;
 		list-style-type:none;
 	}
-	li{
+	li.topLink{
 		float:left;
 	}
-	li a{
+	li.topLink a{
 		display:block;
 		color:#eaefef;
 		text-align:center;
 		padding:14px 16px;
 		text-decoration:none;
 	}
-	li a:hover{
+	li.topLink a:hover{
 		background-color:#0b3075;
 	}
 	.main{
 		margin:auto;
+		width: 60%;
 	}
 	.search{
 		padding:12px 20px 12px;
@@ -57,15 +59,21 @@
 		border-color:#00558e;
 
 	}
+	pre code {
+		background-color: #d4d9d9;
+		border: 1px solid #999;
+		display: block;
+		padding: 20px;
+	}
 	.icon{
 		font-size:200px;
 		margin-top:10px;
 		margin-bottom:10px;
 	}
-	@media only screen and (min-width: 1440px){
+	@media only screen and (max-width: 838px){
 		.main{
 			margin:auto;
-			width:60%;
+			width:90%;
 		}
 	}
 	@media only screen and (min-height: 1440px){
@@ -109,7 +117,7 @@
 	a{
 		color: #eaefef;
 	}
-	ul{
+	ul.topBar{
 		text-transform:uppercase;
 		margin:0;
 		padding:0;
@@ -117,21 +125,22 @@
 		background-color:#00558e;
 		list-style-type:none;
 	}
-	li{
+	li.topLink{
 		float:left;
 	}
-	li a{
+	li.topLink a{
 		display:block;
 		color:#eaefef;
 		text-align:center;
 		padding:14px 16px;
 		text-decoration:none;
 	}
-	li a:hover{
+	li.topLink a:hover{
 		background-color:#0b3075;
 	}
 	.main{
 		margin:auto;
+		width:60%;
 	}
 	.search{
 		padding:12px 20px 12px;
@@ -146,15 +155,21 @@
 		border-color:#00558e;
 
 	}
+	pre code {
+		background-color: #081417;
+		border: 1px solid #999;
+		display: block;
+		padding: 20px;
+	}
 	.icon{
 		font-size:200px;
 		margin-top:10px;
 		margin-bottom:10px;
 	}
-	@media only screen and (min-width: 1440px){
+	@media only screen and (max-width: 838px){
 		.main{
 			margin:auto;
-			width:60%;
+			width:90%;
 		}
 	}
 	@media only screen and (min-height: 1440px){
