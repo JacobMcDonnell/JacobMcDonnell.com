@@ -5,3 +5,4 @@ Disallow: /Schoolproject
 Disallow: /images
 Disallow: /404.html
 Disallow: /template.html
+Disallow: /testPage.html
