@@ -62,8 +62,8 @@
 	pre code {
 		background-color: #d4d9d9;
 		border: 1px solid #999;
-		display: block;
 		overflow:scroll;
+		display: block;
 		padding: 20px;
 	}
 	.icon{
@@ -98,10 +98,10 @@
 @media (prefers-color-scheme: dark) {
 	/*
 	 * Color scheme
-	 * Background color: #0D1F22
-	 * Text Color: #eaefef
-	 * Main color: #00558e
-	 * Secondary color: #0b3075
+	 * Background color: #000000
+	 * Code background: #363636
+	 * Main color: #ffffff
+	 * Secondary color: #f5f5f5
 	 */
 	@font-face{
 		font-family:IBM Plex Mono;
@@ -111,19 +111,18 @@
 		height: calc(100% - 2em);
 	}
 	body{
-		background-color:#0D1F22;
-		color:#eaefef;
+		background-color:#000000;
+		color:#ffffff;
 		font-family:IBM Plex Mono;
 	}
 	a{
-		color: #eaefef;
+		color: #ffffff;
 	}
 	ul.topBar{
 		text-transform:uppercase;
-		margin:0;
-		padding:0;
+		margin:auto;
 		overflow:hidden;
-		background-color:#00558e;
+		background-color:#000;
 		list-style-type:none;
 	}
 	li.topLink{
@@ -131,17 +130,18 @@
 	}
 	li.topLink a{
 		display:block;
-		color:#eaefef;
+		color:#fff;
 		text-align:center;
 		padding:14px 16px;
+		padding-right:16px;;
 		text-decoration:none;
 	}
 	li.topLink a:hover{
-		background-color:#0b3075;
+		background-color:#363636;
 	}
 	.main{
 		margin:auto;
-		width:60%;
+		width: 60%;
 	}
 	.search{
 		padding:12px 20px 12px;
@@ -150,14 +150,14 @@
 		margin-left:auto;
 		margin-right:auto;
 		margin-bottom:15em;
-		color:#00558e;
-		background-color:#eaefef;
+		color:#ffffff;
+		background-color:#000000;
 		font-family:IBM Plex Mono;
-		border-color:#00558e;
+		border-color:#ffffff;
 
 	}
 	pre code {
-		background-color: #081417;
+		background-color: #363636;
 		border: 1px solid #999;
 		display: block;
 		overflow:scroll;
