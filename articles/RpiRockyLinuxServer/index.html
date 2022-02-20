@@ -3,13 +3,14 @@
 		<title>Raspberry Pi Rocky Linux Webserver</title>
 		<link href="../../CSS/main.css" rel="stylesheet" type="text/css">
 		<link href="favicon.ico" rel="icon" sizes="any">
+		<meta name="description" content="A tutorial on setting up a webserver on a Raspberry Pi with Rocky Linux 8"/>
+		<meta name="author" content="Jacob McDonnell"/>
+		<meta name="keywords" content="rocky,rocky linux,linux,raspberry pi,webserver,nginx,certbot,website"/>
 	</head>
 	<body>
 		<ul class="topBar">
 			<li class="topLink"><a href="https://jacobmcdonnell.com/">home</a></li>
 			<li class="topLink"><a href="https://github.com/JacobMcDonnell">github</a></li>
-			<li class="topLink"><a href="https://jacobmcdonnell.com/#projects">projects</a></li>
-			<li class="topLink"><a href="https://jacobmcdonnell.com/#about">about</a></li>
 			<li class="topLink"><a href="https://jacobmcdonnell.com/articles">articles</a></li>
 		</ul>
 		<div class="main">
@@ -37,7 +38,7 @@ sudo passwd username
 			</code></pre>
 			<center><img class="imgs" src="img/Screen Shot 2022-02-19 at 2.18.39 PM.png" referrerpolicy="no-referrer" alt="Screen Shot 2022-02-19 at 2.18.39 PM"></center>
 			<p>Select <strong>Edit</strong> a connection and select your network interface. </p>
-			<center><img class="ims" src="img/Screen Shot 2022-02-19 at 2.23.20 PM.png" referrerpolicy="no-referrer" alt="Screen Shot 2022-02-19 at 2.23.20 PM"></center>
+			<center><img class="imgs" src="img/Screen Shot 2022-02-19 at 2.23.20 PM.png" referrerpolicy="no-referrer" alt="Screen Shot 2022-02-19 at 2.23.20 PM"></center>
 			<p>Select <strong>Show</strong> for <strong>IPv4 CONFIGURATION</strong> and enter the IP you want to set. Then select <strong>OK</strong> at the bottom, and quit the program.</p>
 			<h2 id='securing-the-pi'>Securing the PI</h2>
 			<h3 id='ssh-key-authorization'>SSH Key Authorization</h3>
@@ -182,7 +183,7 @@ sudo getenforce
 			<pre><code>0 12 * * * /usr/bin/certbot renew --quiet
 			</code></pre>
 			<p>This will check everyday at noon to see if the certificate will expire in the next month, if so it will renew the certificate.</p>
-			<p>Now your website should be operational. </p><br><br>
+			<p>Now your website should be operational. </p><br>
 		</div>
 	</body>
 </html>

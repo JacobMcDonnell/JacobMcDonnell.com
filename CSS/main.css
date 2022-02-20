@@ -84,9 +84,6 @@
 	font-family:IBM Plex Mono;
 	src: url(../fonts/IBMPlexMono-Regular.ttf);
 }
-body, html{
-	height: calc(100% - 2em);
-}
 body{
 	font-family:IBM Plex Mono;
 }
@@ -103,7 +100,7 @@ li.topLink{
 li.topLink a{
 	display:block;
 	text-align:center;
-	padding:14px 16px;
+	padding:0.875rem 1rem;
 	text-decoration:none;
 }
 .main{
@@ -111,42 +108,50 @@ li.topLink a{
 	width:60%;
 }
 .search{
-	padding:12px 20px 12px;
+	padding:0.75rem 1.25rem 0.75rem;
 	width:90%;
-	border-radius:5px;
+	border-radius:0.3125rem;
 	margin-left:auto;
 	margin-right:auto;
 	margin-bottom:15em;
 	font-family:IBM Plex Mono;
 }
 pre code {
-	border: 1px solid #999;
+	border: 0.0625rem solid #999;
 	display: block;
 	overflow:auto;
-	padding: 10px;
+	padding: 0.625rem;
 }
 .icon{
-	font-size:200px;
-	margin-top:10px;
-	margin-bottom:10px;
+	font-size:12.5rem;
+	margin-top:0.625rem;
+	margin-bottom:0.625rem;
+}
+
+@media (orientation: portrait) and (pointer:none), (pointer:coarse) {
+	.main{
+		margin:auto;
+		width:90%;
+		font-size:2.25rem;
+	}
+	li.topLink a{
+		font-size:2.25rem;
+	}
+	.search{
+		font-size:2.25rem;
+	}
+	.icon{
+		font-size:16rem;
+	}
 }
 
 @media only screen and (orientation: portrait){
 	.main{
 		margin:auto;
 		width:90%;
-		font-size:36px;
-	}
-	li.topLink a{
-		font-size:36px;
-	}
-	.search{
-		font-size:36px;
-	}
-	.icon{
-		font-size:256px;
 	}
 }
+
 div.article a{
 	text-decoration:none;
 	display:block;
