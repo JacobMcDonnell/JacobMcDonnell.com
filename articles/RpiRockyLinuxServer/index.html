@@ -16,7 +16,7 @@
 		<div class="main">
 			<p>&nbsp;</p>
 			<h1 id='hosting-a-website-on-the-raspberry-pi-with-rocky-linux'>Hosting a Website on the Raspberry Pi with Rocky Linux</h1>
-			<a href="rpi4rockylinuxwebserver.md">Markdown File Download</a> <a href="rpi4rockylinuxwebserver.pdf">PDF File Download</a>
+			<a href="rpi4rockylinuxwebserver.md">Markdown File Download</a>
 			<p>First Download Rocky Linux for the Raspberry Pi 3 &amp; 4 from <a href='https://rockylinux.org/alternative-images'>their website</a>.</p>
 			<center><img class="imgs" src="img/Screen Shot 2022-02-19 at 2.15.13 PM.png" referrerpolicy="no-referrer" alt="Screen Shot 2022-02-19 at 2.15.13 PM"></center>
 			<p>Next you want to burn this image to the sd card that you are going to use. Now start up the Raspberry Pi and login with the default user <code>rocky</code> and the password is <code>rockylinux</code>. </p>
@@ -72,7 +72,7 @@ sudo systemctl enable fail2ban
 sudo systemctl restart fail2ban
 			</code></pre>
 			<p>To create an SSH jail, edit the ssh config file with vim or nano:</p>
-			<pre><code class='language-shell' lang='shell'>sudo vim /etc/fail2ban/jail.d/sshd.local
+			<pre><code class='language-shell' lang='shell'>sudo nano /etc/fail2ban/jail.d/sshd.local
 			</code></pre>
 			<p>Paste the following into the file and change the values as you see fit:</p>
 			<pre><code>[sshd]
@@ -99,7 +99,7 @@ sudo dnf upgrade
 			<pre><code class='language-shell' lang='shell'>sudo dnf install ddclient
 			</code></pre>
 			<p>Now, we want to edit the config file for ddclient:</p>
-			<pre><code class='language-shell' lang='shell'>sudo vim /etc/ddclient.conf
+			<pre><code class='language-shell' lang='shell'>sudo nano /etc/ddclient.conf
 			</code></pre>
 			<p>You&#39;ll want to look for where it says <code>protocol=dyndns2</code>, and enter your information:</p>
 			<pre><code>##
@@ -142,7 +142,7 @@ sudo firewall-cmd --reload
 sudo chmod -R 755 /var/www/websiteName
 			</code></pre>
 			<p>Now, we will create the config file for website:</p>
-			<pre><code class='language-shell' lang='shell'>sudo vim /etc/nginx/conf.d/websiteName.conf
+			<pre><code class='language-shell' lang='shell'>sudo nano /etc/nginx/conf.d/websiteName.conf
 			</code></pre>
 			<p>and paste the following into the file:</p>
 			<pre><code>server {

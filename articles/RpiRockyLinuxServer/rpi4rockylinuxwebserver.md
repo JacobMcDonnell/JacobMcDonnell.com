@@ -1,5 +1,3 @@
-
-
 # Hosting a Website on the Raspberry Pi with Rocky Linux
 
 First Download Rocky Linux for the Raspberry Pi 3 & 4 from [their website](https://rockylinux.org/alternative-images).![Screen Shot 2022-02-19 at 2.15.13 PM](img/Screen Shot 2022-02-19 at 2.15.13 PM.png)
@@ -103,10 +101,10 @@ sudo mv /etc/fail2ban/jail.d/00-firewalld.conf /etc/fail2ban/jail.d/00-firewalld
 sudo systemctl restart fail2ban
 ```
 
-To create an SSH jail, edit the ssh config file with vim or nano:
+To create an SSH jail, edit the ssh config file with nano or vim:
 
 ```sh
-sudo vim /etc/fail2ban/jail.d/sshd.local
+sudo nano /etc/fail2ban/jail.d/sshd.local
 ```
 
 Paste the following into the file and change the values as you see fit:
@@ -156,7 +154,7 @@ sudo dnf install ddclient
 Now, we want to edit the config file for ddclient:
 
 ```sh
-sudo vim /etc/ddclient.conf
+sudo nano /etc/ddclient.conf
 ```
 
 You'll want to look for where it says `protocol=dyndns2`, and enter your information:
@@ -230,7 +228,7 @@ sudo chmod -R 755 /var/www/websiteName
 Now, we will create the config file for website:
 
 ```sh
-sudo vim /etc/nginx/conf.d/websiteName.conf
+sudo nano /etc/nginx/conf.d/websiteName.conf
 ```
 
 and paste the following into the file:
