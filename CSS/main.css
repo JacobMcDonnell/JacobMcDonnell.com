@@ -1,41 +1,39 @@
-@media (prefers-color-scheme: light) {
-	/*
-	 * Color scheme
-	 * Background color: #eaefef
-	 * Code background: #d4d9d9
-	 * Main color: #00558e
-	 * Secondary color: #0b3075
-	 */
-	:root {
-		--main-bg-color: #eaefef;
-		--code-bg-color: #d4d9d9;
-		--main-color: #00558e;
-		--second-color: #0b3075;
-	  }
-	body{
-		background-color:var(--main-bg-color);
-		color:var(--main-color);
+/*
+	* Color scheme
+	* Background color: #eaefef
+	* Code background: #d4d9d9
+	* Main color: #00558e
+	* Secondary color: #0b3075
+	*/
+:root {
+	--main-bg-color: #eaefef;
+	--code-bg-color: #d4d9d9;
+	--main-color: #00558e;
+	--second-color: #0b3075;
 	}
-	a{
-		color: var(--main-color);
-	}
-	ul.topBar{
-		background-color:var(--main-color);
-	}
-	li.topLink a{
-		color:var(--main-bg-color);
-	}
-	li.topLink a:hover{
-		background-color:var(--second-color);
-	}
-	.search{
-		color:var(--main-color);
-		background-color:var(--main-bg-color);
-		border-color:var(--main-color);
-	}
-	pre code {
-		background-color: var(--code-bg-color);
-	}
+body{
+	background-color:var(--main-bg-color);
+	color:var(--main-color);
+}
+a{
+	color: var(--main-color);
+}
+ul.topBar{
+	background-color:var(--main-color);
+}
+li.topLink a{
+	color:var(--main-bg-color);
+}
+li.topLink a:hover{
+	background-color:var(--second-color);
+}
+.search{
+	color:var(--main-color);
+	background-color:var(--main-bg-color);
+	border-color:var(--main-color);
+}
+pre code {
+	background-color: var(--code-bg-color);
 }
 
 @media (prefers-color-scheme: dark) {
