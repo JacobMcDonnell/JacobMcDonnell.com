@@ -1,23 +1,32 @@
-<html>
-	<head>
-		<title>Raspberry Pi Rocky Linux Webserver</title>
-		<link href="../../CSS/main.css" rel="stylesheet" type="text/css">
-		<link href="favicon.ico" rel="icon" sizes="any">
-		<meta name="description" content="A tutorial on setting up a webserver on a Raspberry Pi with Rocky Linux 8"/>
-		<meta name="author" content="Jacob McDonnell"/>
-		<meta name="keywords" content="rocky,rocky linux,linux,raspberry pi,webserver,nginx,certbot,website"/>
-	</head>
-	<body>
-		<ul class="topBar">
-			<li class="topLink"><a href="https://jacobmcdonnell.com/">home</a></li>
-			<li class="topLink"><a href="https://github.com/JacobMcDonnell">github</a></li>
-			<li class="topLink"><a href="https://jacobmcdonnell.com/articles">articles</a></li>
-			<li class="toplink"><a href="https://jacobmcdonnell.com/articles/rss.xml/">rss feed</a></li>
-		</ul>
-		<div class="main">
-			<p>&nbsp;</p>
-			<h1 id='hosting-a-website-on-the-raspberry-pi-with-rocky-linux'>Hosting a Website on the Raspberry Pi with Rocky Linux</h1>
-			<a href="rpi4rockylinuxwebserver.md">Markdown File Download</a>
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+
+<channel>
+<title>Jacob McDonnell</title>
+<description>Articles from Jacob McDonnell.</description>
+<language>en-us</language>
+<link>https://jacobmcdonnell.com/rss.xml</link>
+<atom:link href="https://jacobmcdonnell.com/rss.xml" rel="self" type="application/rss+xml" />
+<image>
+<title>Jacob McDonnell</title>
+<url>https://jacobmcdonnell.com/favicon.ico</url>
+<link>https://jacobmcdonnell.com/rss.xml</link>
+</image>
+
+<!-- LB -->
+
+
+
+
+
+
+
+<item>
+<title>Hosting a Website on the Raspberry Pi with Rocky Linux</title>
+<guid>https://jacobmcdonnell.com/articles/RpiRockyLinuxServer/</guid>
+<link>https://jacobmcdonnell.com/articles/RpiRockyLinuxServer/</link>
+<pubDate>Sun, 19 Feb 2022 15:00:00 -0400</pubDate>
+<description><![CDATA[
 			<p>First Download Rocky Linux for the Raspberry Pi 3 &amp; 4 from <a href='https://rockylinux.org/alternative-images'>their website</a>.</p>
 			<center><img class="imgs" src="img/Screen Shot 2022-02-19 at 2.15.13 PM.png" referrerpolicy="no-referrer" alt="Screen Shot 2022-02-19 at 2.15.13 PM"></center>
 			<p>Next you want to burn this image to the sd card that you are going to use. Now start up the Raspberry Pi and login with the default user <code>rocky</code> and the password is <code>rockylinux</code>. </p>
@@ -185,6 +194,11 @@ sudo getenforce
 			</code></pre>
 			<p>This will check everyday at noon to see if the certificate will expire in the next month, if so it will renew the certificate.</p>
 			<p>Now your website should be operational. </p><br>
-		</div>
-	</body>
-</html>
+]]></description>
+</item>
+
+
+
+</channel>
+
+</rss>
