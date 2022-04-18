@@ -25,7 +25,7 @@
 <title>Hosting a Website on the Raspberry Pi with Rocky Linux</title>
 <guid>https://jacobmcdonnell.com/articles/RpiRockyLinuxServer/</guid>
 <link>https://jacobmcdonnell.com/articles/RpiRockyLinuxServer/</link>
-<pubDate>Sun, 19 Feb 2022 15:00:00 -0400</pubDate>
+<pubDate>Sun, 19 Feb 2022 15:00:00 -0500</pubDate>
 <description><![CDATA[
 			<p>First Download Rocky Linux for the Raspberry Pi 3 &amp; 4 from <a href='https://rockylinux.org/alternative-images'>their website</a>.</p>
 			<center><img class="imgs" src="img/Screen Shot 2022-02-19 at 2.15.13 PM.png" referrerpolicy="no-referrer" alt="Screen Shot 2022-02-19 at 2.15.13 PM"></center>
