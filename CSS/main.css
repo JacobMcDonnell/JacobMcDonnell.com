@@ -122,23 +122,6 @@ pre code {
 	margin-bottom:0.625rem;
 }
 
-@media (orientation: portrait) and (pointer:none), (pointer:coarse) {
-	.main{
-		margin:auto;
-		width:90%;
-		font-size:2.25rem;
-	}
-	li.topLink a{
-		font-size:2.25rem;
-	}
-	.search{
-		font-size:2.25rem;
-	}
-	.icon{
-		font-size:16rem;
-	}
-}
-
 @media only screen and (orientation: portrait){
 	.main{
 		margin:auto;
