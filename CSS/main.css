@@ -76,14 +76,10 @@ pre code {
 		background-color: var(--color-2);
 	}
 }
-/* Common CSS styling */
 
-@font-face{
-	font-family:IBM Plex Mono;
-	src: url(../fonts/IBMPlexMono-Regular.ttf);
-}
+/* Common CSS styling */
 body{
-	font-family:IBM Plex Mono;
+	font-family:Arial;
 }
 ul.topBar{
 	text-transform:uppercase;
