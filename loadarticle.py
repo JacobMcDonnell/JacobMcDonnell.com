@@ -14,7 +14,7 @@ print(r.get_article(dbbak.db_entry['url']))
 def gen_item(article):
     date = article["date"].split("/")
     date = datetime.date(int(date[2]), int(date[0]), int(date[1]))
-    item = [ '<item>', f'<title>{article["title"]}</title>', f'<guid>https://jacobmcdonnell.com/articles/{article["url"]}/</guid>', f'<link>https://jacobmcdonnell.com/articles/article["url"]/</link>', f'<pubDate>{date.strftime("%d %b %Y")} 00:00:00 -0500</pubDate>', '<description><![CDATA[', article["desc"],']]></description>', '</item>' ]
+    item = [ '<item>', f'<title>{article["title"]}</title>', f'<guid>https://jacobmcdonnell.com/articles/{article["url"]}/</guid>', f'<link>https://jacobmcdonnell.com/articles/{article["url"]}/</link>', f'<pubDate>{date.strftime("%d %b %Y")} 00:00:00 -0500</pubDate>', '<description><![CDATA[', article["desc"],']]></description>', '</item>' ]
     return "\n".join(item)
 
 def gen_rss():
