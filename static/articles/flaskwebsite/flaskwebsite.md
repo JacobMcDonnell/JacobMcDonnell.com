@@ -112,6 +112,8 @@ Now you will need to run the following commands:
 sudo systemctl daemon-reload
 sudo systemctl enable yourapp
 sudo systemctl start yourapp
+
+sudo setsebool -P httpd_can_network_connect 1
 </pre></code>
 
 At this point when you navigate to your website, it should load.
