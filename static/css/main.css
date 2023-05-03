@@ -133,6 +133,16 @@ div.article a{
 	text-decoration:none;
 	display:block;
 }
-img.imgs {
+
+/* Highlighting of article title */
+/* div.article{ */
+/*     padding: 0.625rem; */
+/* } */
+
+/* div.article a:hover{ */
+/*     background-color:var(--color-2); */
+/* } */
+
+img {
 	width:75%;
 }

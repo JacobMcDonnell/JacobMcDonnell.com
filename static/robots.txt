@@ -1,0 +1,6 @@
+User-agent: *
+Disallow: /css
+Disallow: /images
+Disallow: /404.html
+Disallow: /testPage
+
