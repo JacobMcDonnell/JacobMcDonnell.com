@@ -48,6 +48,10 @@ def get_rss():
 def get_css(file):
     return send_file(f"static/css/{file}", mimetype='text/css')
 
+@app.route('/logos/<image>')
+def get_logo(image):
+    return send_file(f"static/logo/{image}", mimetype='image/svg')
+
 @app.route('/icons/<image>')
 def get_favicon(image):
     return send_file(f"static/logo/{image}", mimetype='image/png')
