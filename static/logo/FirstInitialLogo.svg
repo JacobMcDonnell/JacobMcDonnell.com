@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="210mm"
+   height="297mm"
+   viewBox="0 0 210 297"
+   version="1.1"
+   id="svg1"
+   inkscape:export-filename="bitmap.svg"
+   inkscape:export-xdpi="34.208755"
+   inkscape:export-ydpi="34.208755"
+   inkscape:version="1.4 (e7c3feb1, 2024-10-09)"
+   sodipodi:docname="FirstInitialLogo.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="1"
+     inkscape:showpageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#282828"
+     inkscape:document-units="mm"
+     inkscape:zoom="0.2296605"
+     inkscape:cx="792.47411"
+     inkscape:cy="846.90228"
+     inkscape:window-width="1464"
+     inkscape:window-height="916"
+     inkscape:window-x="0"
+     inkscape:window-y="38"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs1">
+    <rect
+       x="307.8207"
+       y="245.11648"
+       width="380.50058"
+       height="350.57357"
+       id="rect6" />
+  </defs>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <path
+       id="path5"
+       style="fill:#00558e;fill-opacity:1;stroke-width:0.264583"
+       d="M 105,91.56446 A 56.935547,56.935547 0 0 0 48.064459,148.5 56.935547,56.935547 0 0 0 105,205.43554 56.935547,56.935547 0 0 0 161.93554,148.5 56.935547,56.935547 0 0 0 105,91.56446 Z m 0,6.975801 A 49.959995,49.959995 0 0 1 154.96025,148.5 49.959995,49.959995 0 0 1 105,198.46026 49.959995,49.959995 0 0 1 55.040259,148.5 49.959995,49.959995 0 0 1 105,98.540261 Z" />
+    <text
+       xml:space="preserve"
+       transform="matrix(0.26458333,0,0,0.26458333,-0.25662302,42.172623)"
+       id="text6"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:400px;line-height:0.9;font-family:'Noto Sans Adlam';-inkscape-font-specification:'Noto Sans Adlam';text-align:start;writing-mode:lr-tb;direction:ltr;white-space:pre;shape-inside:url(#rect6);display:inline;fill:#00558e;fill-opacity:1"><tspan
+         x="307.82031"
+         y="539.06726"
+         id="tspan2"><tspan
+           style="font-family:'IBM Plex Sans';-inkscape-font-specification:'IBM Plex Sans'"
+           id="tspan1">J</tspan></tspan></text>
+  </g>
+</svg>

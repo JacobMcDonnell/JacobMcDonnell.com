@@ -48,9 +48,9 @@ def get_rss():
 def get_css(file):
     return send_file(f"static/css/{file}", mimetype='text/css')
 
-@app.route('/favicon.ico')
-def get_favicon():
-    return send_file("static/favicon.ico", mimetype='image/ico')
+@app.route('/icons/<image>')
+def get_favicon(image):
+    return send_file(f"static/logo/{image}", mimetype='image/png')
 
 @app.route('/robots.txt')
 def get_robots():
