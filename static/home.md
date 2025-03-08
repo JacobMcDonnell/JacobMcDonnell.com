@@ -18,8 +18,8 @@ articles about projects that I am working on.
 ### Personal Projects
 
 [This Website](https://github.com/JacobMcDonnell/JacobMcDonnell.com) is written
-in Python using Flask. It is hosted on VPS running Red Hat Linux using NGINX as
-a proxy.
+in Go using the standard net/http package. It is hosted on VPS running Red Hat
+Linux using NGINX as a proxy.
 
 [Quick and Dirty MIPS Assembler](https://github.com/JacobMcDonnell/QDMA) is a
 MIPS assembler written in Go. QDMA supports the Executable and Linkable Format
