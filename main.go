@@ -91,12 +91,33 @@ func ErrorPage(w http.ResponseWriter, message string, code int) {
 	})
 }
 
+func Usage() {
+	fmt.Fprintf(os.Stderr, "%s [--port port]\n", os.Args[0])
+}
+
 func main() {
+	port := ":8000"
+
+	for i := 1; i < len(os.Args); i++ {
+		switch os.Args[i] {
+		case "--port":
+			if i+1 >= len(os.Args) {
+				Usage()
+			} else {
+				port = ":" + os.Args[i+1]
+				i++
+			}
+		default:
+			log.Println("Unknown option: ", os.Args[i])
+			Usage()
+		}
+	}
+
 	http.HandleFunc("/robots.txt", GetFiles)
 	http.HandleFunc("/rss.xml", GetFiles)
 	http.HandleFunc("/card", GetFiles)
 	http.HandleFunc("/css/", GetFiles)
 	http.HandleFunc("/logos/", GetFiles)
 	http.HandleFunc("/", GetHome)
-	log.Fatal(http.ListenAndServe(":8000", nil))
+	log.Fatal(http.ListenAndServe(port, nil))
 }
