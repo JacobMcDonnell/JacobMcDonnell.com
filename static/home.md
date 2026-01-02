@@ -2,8 +2,8 @@
 
 I'm Jacob McDonnell. I have been interested in computers since I was young.
 My father has been in the technology field since before I was born, so I guess
-that interest came from him. Currently, I am a 7th semester student at Penn
-State studying computer science.
+that interest came from him. I'm a recent Computer Science grad from Penn
+State.
 
 My interests, with respect to computers, are programming, UNIX/Plan9, and
 electronics/hardware. Thanks to AP Computer Science A, I have a good
