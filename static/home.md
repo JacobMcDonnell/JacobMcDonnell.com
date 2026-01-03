@@ -15,17 +15,17 @@ articles about projects that I am working on.
 
 # Projects
 
-### [This Website](https://github.com/JacobMcDonnell/JacobMcDonnell.com)
+### [This Website](https://codeberg.org/JacobMcDonnell/JacobMcDonnell.com)
 is written in Go using the standard net/http package. It is hosted on VPS
 running Red Hat Linux using NGINX as a proxy.
 
-### [Quick and Dirty MIPS Assembler](https://github.com/JacobMcDonnell/QDMA)
+### [Quick and Dirty MIPS Assembler](https://codeberg.org/JacobMcDonnell/QDMA)
 is a MIPS assembler written in Go. QDMA supports the Executable and Linkable
 Format for binary executables. It is a two pass assembler where the first pass
 tracks the labels for functions and data and the second pass assembles the
 instructions.
 
-### [Quick and Dirty MIPS Emulator](https://github.com/JacobMcDonnell/QDME)
+### [Quick and Dirty MIPS Emulator](https://codeberg.org/JacobMcDonnell/QDME)
 is a MIPS emulator written in C. It supports 32-bit ELF binaries and emulates a
 simple MIPS processor.
 
